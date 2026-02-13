@@ -1,0 +1,86 @@
+.topbar {
+  width: 100%;
+  background: #f3f2f8;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.topbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Left */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: 13px;
+  color: #000;
+}
+
+/* Right */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  color: #000;
+  transition: 0.2s;
+}
+
+.social:hover {
+  color: #2e3b8f;
+  background: rgba(46, 58, 143, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .topbar-container {
+    /* flex-direction: column;
+    align-items: flex-start; */
+    display: none;
+  }
+  .topbar-left .label {
+    display: block; /* hide text labels on small screens */
+  }
+  .topbar-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

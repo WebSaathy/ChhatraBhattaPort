@@ -1,0 +1,151 @@
+.voting-section {
+  background: #2e3b8f;
+  color: white;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.voting-inner {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.voting-head h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.voting-head p {
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* =====================
+   SLIDER STAGE
+===================== */
+
+.voting-stage {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Slides wrapper */
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  /* width is dynamically set from React, no fixed width here */
+}
+
+/* Each slide */
+.slide {
+  flex: 0 0 auto;           /* flex-basis is now dynamically set inline from React */
+  width: 100%;              /* fallback */
+  opacity: 0.4;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Icon */
+.icon-wrap {
+  margin-bottom: 20px;
+}
+
+.icon-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.slide.active .icon-img {
+  transform: scale(1.1);
+}
+
+.svg-fallback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =====================
+   CONTROLS
+===================== */
+
+.voting-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.voting-controls button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.voting-controls button:hover {
+  background: white;
+  color: #2e3b8f;
+  transform: scale(1.1);
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dots button.on {
+  background: white;
+  transform: scale(1.2);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+  .icon-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .voting-head h2 {
+    font-size: 24px;
+  }
+
+  .slide {
+    padding: 10px;
+  }
+}
