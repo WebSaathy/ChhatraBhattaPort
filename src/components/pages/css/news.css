@@ -1,0 +1,148 @@
+.news-container {
+  padding: 0 100px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.news-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #a40000;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.news-title .line {
+  flex: 1;
+  height: 4px;
+  background: #c66c75;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.newscard {
+  background-color: #fff;
+  overflow: hidden;
+  width: calc((100% - 40px) / 3);
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+}
+
+.newscard img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.newscard p {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Poppins';
+
+}
+
+@media (max-width: 1024px) {
+  .news-container {
+    padding: 0 60px;
+  }
+
+  .news-title {
+    font-size: 50px;
+    gap: 20px;
+  }
+
+  .newscard {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .newscard img {
+    height: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-container {
+    padding: 0 40px;
+  }
+
+  .news-title {
+    font-size: 40px;
+    gap: 15px;
+  }
+
+  .news-cards {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .newscard {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .newscard img {
+    height: 200px;
+  }
+
+  .newscard p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-container {
+    padding: 0 20px;
+  }
+
+  .news-title {
+    font-size: 30px;
+    gap: 10px;
+  }
+
+  .news-title .line {
+    height: 4px;
+  }
+
+  .newscard img {
+    height: 180px;
+  }
+
+  .newscard p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 360px) {
+  .news-title {
+    font-size: 26px;
+  }
+
+  .news-title .line {
+    height: 4px;
+  }
+
+  .newscard img {
+    height: 150px;
+  }
+
+  .newscard p {
+    font-size: 12px;
+  }
+}

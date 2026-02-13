@@ -1,0 +1,236 @@
+.worker-container {
+  padding: 0px 100px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #a40000;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 80px;
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+}
+
+.page-title .line {
+  flex: 1;
+  height: 4px;
+  background: #c66c75;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.schedule-card {
+  flex: 1;
+  min-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #cfd3dc;
+  overflow: hidden;
+  
+}
+
+.card-header {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 16px 0;
+  color: #fff;
+  font-weight: 900;
+
+}
+
+.schedule-card.red .card-header {
+  background: #b50000;
+}
+
+.schedule-card.blue .card-header {
+  background: #3949a3;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: 800;
+
+}
+
+.table-header {
+  background: #e4e7f2;
+  font-weight: 800;
+  border-bottom: 1px solid #cfd3dc;
+}
+
+.schedule-card.red .table-header {
+  background: #e7c1c1;
+}
+
+.schedule-card.blue .table-header {
+  background: #cfd6f2;
+}
+
+.table-header div,
+.table-row div {
+  padding: 14px;
+  text-align: center;
+  border-right: 1px solid #cfd3dc;
+}
+
+.table-header div:last-child,
+.table-row div:last-child {
+  border-right: none;
+  font-weight: 900;
+}
+
+.table-row {
+
+  border-bottom: 1px solid #cfd3dc;
+}
+
+.img {
+  height: 20px;
+
+}
+
+.table-row:last-child {
+  border-bottom: none;
+
+}
+
+.schedule-card.red .table-row div {
+  color: #b50000;
+}
+
+.schedule-card.blue .table-row div {
+  color: #3949a3;
+}
+
+@media (max-width: 992px) {
+  .worker-container {
+    padding: 0 50px;
+  }
+
+  .page-title {
+    font-size: 40px;
+    gap: 20px;
+  }
+
+  .card-wrapper {
+    gap: 30px;
+  }
+
+  .schedule-card {
+    min-width: 400px;
+  
+  }
+
+  .card-header {
+    font-size: 20px;
+    /* smaller header */
+    padding: 14px 0;
+  }
+
+  .table-header div,
+  .table-row div {
+    padding: 12px;
+    font-size: 15px;
+   
+  }
+
+  .img {
+    height: 18px;
+   
+  }
+}
+
+@media (max-width: 768px) {
+  .worker-container {
+    padding: 0 30px;
+  }
+
+  .page-title {
+    font-size: 36px;
+    gap: 15px;
+  }
+
+  .schedule-card {
+    min-width: 300px;
+   
+  }
+
+  .card-header {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .table-header div,
+  .table-row div {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .img {
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .worker-container {
+    padding: 0 15px;
+  }
+
+  .page-title {
+    font-size: 28px;
+    gap: 10px;
+  }
+
+  .schedule-card {
+    min-width: 100%;
+   
+  }
+
+  .card-header {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .table-header div,
+  .table-row div {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .img {
+    height: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 24px;
+  }
+
+  .card-header {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .table-header div,
+  .table-row div {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .img {
+    height: 12px;
+  }
+}

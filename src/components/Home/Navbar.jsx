@@ -1,45 +1,45 @@
-// import { useState } from 'react'
-// import styles from '../style/Navbar.module.css'
+// // import { useState } from 'react'
+// // import styles from '../style/Navbar.module.css'
 
-// function Navbar() {
-//   const [open, setOpen] = useState(false)
+// // function Navbar() {
+// //   const [open, setOpen] = useState(false)
 
-//   return (
-//     <div className={styles.container}>
-//       {/* Top row */}
-//       <div className={styles.topRow}>
-//         <div className={styles.logoContainer}>
-//           <img src="/NavLogo.png" alt="Logo" className={styles.logo} />
-//           <h1 className={styles.title}>छत्रबहादुर भट्ट</h1>
-//         </div>
+// //   return (
+// //     <div className={styles.container}>
+// //       {/* Top row */}
+// //       <div className={styles.topRow}>
+// //         <div className={styles.logoContainer}>
+// //           <img src="/NavLogo.png" alt="Logo" className={styles.logo} />
+// //           <h1 className={styles.title}>छत्रबहादुर भट्ट</h1>
+// //         </div>
 
-//         {/* Hamburger */}
-//         <div
-//   className={styles.hamburger}
-//   onClick={() => setOpen(!open)}
-// >
-//   <span className={open ? styles.line1Open : ''}></span>
-//   <span className={open ? styles.line2Open : ''}></span>
-//   <span className={open ? styles.line3Open : ''}></span>
-// </div>
+// //         {/* Hamburger */}
+// //         <div
+// //   className={styles.hamburger}
+// //   onClick={() => setOpen(!open)}
+// // >
+// //   <span className={open ? styles.line1Open : ''}></span>
+// //   <span className={open ? styles.line2Open : ''}></span>
+// //   <span className={open ? styles.line3Open : ''}></span>
+// // </div>
 
-//       </div>
+// //       </div>
 
-//       {/* Menu */}
-//       <nav className={`${styles.nav} ${open ? styles.navOpen : ''}`}>
-//         <a href="#" className={styles.navLink}>मेरो परिचय</a>
-//         <a href="#" className={styles.navLink}>दृष्टि, मिशन र प्रतिबद्धता</a>
-//         <a href="#" className={styles.navLink}>काम र उपलब्धिहरु</a>
-//         <a href="#" className={styles.navLink}>समाचार तथा गतिविधि</a>
-//         <a href="#" className={styles.navLink}>ग्यालेरी</a>
+// //       {/* Menu */}
+// //       <nav className={`${styles.nav} ${open ? styles.navOpen : ''}`}>
+// //         <a href="#" className={styles.navLink}>मेरो परिचय</a>
+// //         <a href="#" className={styles.navLink}>दृष्टि, मिशन र प्रतिबद्धता</a>
+// //         <a href="#" className={styles.navLink}>काम र उपलब्धिहरु</a>
+// //         <a href="#" className={styles.navLink}>समाचार तथा गतिविधि</a>
+// //         <a href="#" className={styles.navLink}>ग्यालेरी</a>
 
-//         <button className={styles.contactButton}>
-//           सम्पर्क गर्नुहोस्
-//         </button>
-//       </nav>
-//     </div>
-//   )
-// }
+// //         <button className={styles.contactButton}>
+// //           सम्पर्क गर्नुहोस्
+// //         </button>
+// //       </nav>
+// //     </div>
+// //   )
+// // }
 
 // export default Navbar
 
@@ -57,8 +57,8 @@ function Navbar() {
       {/* TOP ROW */}
       <div className={styles.topRow}>
         <div className={styles.logoContainer}>
-          <img src="/NavLogo.png" alt="Logo" className={styles.logo} />
-          <h1 className={styles.title}>छत्रबहादुर भट्ट</h1>
+         <a href="/"> <img src="/NavLogo.png" alt="Logo" className={styles.logo} /></a>
+        <a href="/">  <h1 className={styles.title}>छत्रबहादुर भट्ट</h1></a>
         </div>
 
         {/* HAMBURGER */}
@@ -74,11 +74,11 @@ function Navbar() {
         <div className={styles.links}>
 
         
-        <a href="#" className={styles.navLink}>मेरो परिचय</a>
-        <a href="#" className={styles.navLink}>दृष्टि, मिशन र प्रतिबद्धता</a>
-        <a href="#" className={styles.navLink}>काम र उपलब्धिहरु</a>
-        <a href="#" className={styles.navLink}>समाचार तथा गतिविधि</a>
-        <a href="#" className={styles.navLink}>ग्यालेरी</a>
+       <a href="/pages/introduction" className={styles.navLink}>मेरो परिचय</a>
+        <a href="/pages/agenda" className={styles.navLink}>एजेन्डा</a>
+        <a href="/pages/worker" className={styles.navLink}>अभियान तालिका</a>
+        <a href="/pages/news" className={styles.navLink}>समाचार तथा गतिविधि</a>
+       <a href="/pages/gallery" className={styles.navLink}>ग्यालेरी</a>
         </div>
         <button className={styles.contactButton}>
           सम्पर्क गर्नुहोस्
@@ -90,3 +90,50 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
+
+// import { useState } from 'react'
+// import styles from '../style/Navbar.module.css'
+
+// function Navbar() {
+//   const [open, setOpen] = useState(false)
+
+//   return (
+//     <div className={styles.container}>
+//       <div className={styles.topRow}>
+//         <div className={styles.logoContainer}>
+//          <a href="/"><img src="/NavLogo.png" alt="Logo" className={styles.logo} /></a> 
+//          <a href="/"><h1   className={styles.title} >छत्रबहादुर भट्ट</h1></a> 
+//         </div>
+
+//         {/* HAMBURGER */}
+//         <div className={styles.hamburger} onClick={() => setOpen(!open)}>
+//           <span className={open ? styles.line1Open : ''}></span>
+//           <span className={open ? styles.line2Open : ''}></span>
+//           <span className={open ? styles.line3Open : ''}></span>
+//         </div>
+//       </div>
+
+//       {/* NAV */}
+//       <nav className={`${styles.nav} ${open ? styles.navOpen : ''}`}>
+//         <div className={styles.links}>
+
+        
+//         <a href="/pages/introduction" className={styles.navLink}>मेरो परिचय</a>
+//         <a href="/pages/agenda" className={styles.navLink}>एजेन्डा</a>
+//         <a href="/pages/worker" className={styles.navLink}>अभियान तालिका</a>
+//         <a href="/pages/news" className={styles.navLink}>समाचार तथा गतिविधि</a>
+//         <a href="/pages/gallery" className={styles.navLink}>ग्यालेरी</a>
+        
+//         </div>
+//         <button className={styles.contactButton}>
+//           सम्पर्क गर्नुहोस्
+//         </button>
+//       </nav>
+//     </div>
+//   )
+// }
+
+// export default Navbar

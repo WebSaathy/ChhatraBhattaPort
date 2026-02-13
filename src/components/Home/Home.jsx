@@ -8,10 +8,11 @@ import Fourth from './Fourth'
 import Five from './Five'
 import ActivityBento from './ActivityBento'
 import VotingSteps from './VotingSteps'
+import Footer from './Footer'
 function Home() {
   return (
     <div className='container'>
-    <Navbar/>
+   
     <Hero/>
     <Second/>
     <Third/>
@@ -19,6 +20,7 @@ function Home() {
     <Five/>
     <ActivityBento/>
     <VotingSteps/>
+    <Footer />
     </div>
   )
 }

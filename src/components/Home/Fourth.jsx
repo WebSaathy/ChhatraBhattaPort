@@ -13,7 +13,7 @@ function Fourth() {
             </div>
 
         </div>
-        <div className="img">
+        <div className="image">
           <img src="Book.png" alt="" />
             
         </div>

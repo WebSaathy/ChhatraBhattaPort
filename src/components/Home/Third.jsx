@@ -25,7 +25,7 @@ function Third() {
         संवाद र सान्निध्यले मलाई अझ जिम्मेवार नागरिक र समाजप्रति संवेदनशील
         व्यक्तिका रुपमा अघि बढ्न ऊर्जा दियो।
       </p>
-      <button className={styles.button}>पूरा पढ्नुहोस्</button>
+     <a href="/pages/Read"><button className={styles.button}>पूरा पढ्नुहोस्</button></a> 
       </div>
       <div className={styles.img}>
         <img src="Tata.png" alt="" />
